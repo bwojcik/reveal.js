@@ -41,7 +41,7 @@
 		<div class="reveal">
       <div class="footer">
         <div class="branding--logo">
-            <span class="logo__image"><img src="lib/image/content/logo.png" alt="Conference logo" height="55px" /></span>
+            <span class="logo__image"><img src="/images/conf_logo.png" alt="Conference logo" height="55px" /></span>
             <p class="logo__site-name">#conference</p>
         </div>
         <div class="company--logo">
@@ -64,6 +64,22 @@
           <h3><a href="" target="_blank">presentation conf link</a></h3>
           <h3>conference</h3>
           <h3>#conference</h3>
+        </section>
+        <section>
+          <pre><code class="line-numbers">
+            /**
+             * Example Code.
+             */
+            function my_example_code($line_numbers = TRUE) {
+              $message = 'This example code does';
+              $message .= ($line_numbers ? '' : ' not');
+              $message .= ' have line numbers.';
+
+              return $message;
+            }
+
+            print my_example_code(TRUE);
+          </code></pre>
         </section>
         <section>
           <h1>Feedback</h1>
@@ -95,7 +111,7 @@
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
           { src: 'plugin/notes/notes.js', async: true },
-					{ src: 'lib/js/line-numbers.js', async: false },
+					{ src: 'plugin/line-numbers/line-numbers.js'},
           { src: 'lib/js/gif-loader.js', async: true},
           { src: 'lib/js/captions-aside.js', async: false},
           { src: 'plugin/markdown/marked.js' },
